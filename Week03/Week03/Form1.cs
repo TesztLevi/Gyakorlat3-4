@@ -21,8 +21,10 @@ namespace Week03
         public Form1()
         {
             InitializeComponent();
-            
 
+            label1.Text = Resource2.LastName; 
+            label2.Text = Resource2.Firstname; 
+            button1.Text = Resource2.Add; 
             listBox1.DataSource = users;
             listBox1.ValueMember = "ID";
             listBox1.DisplayMember = "FullName";
