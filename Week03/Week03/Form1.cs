@@ -21,9 +21,7 @@ namespace Week03
         public Form1()
         {
             InitializeComponent();
-            label1.Text = Resource1.Lastname;
-            label2.Text = Resource1.Firstname;
-            button1.Text = Resource1.Add;
+            
 
             listBox1.DataSource = users;
             listBox1.ValueMember = "ID";
@@ -41,8 +39,8 @@ namespace Week03
         {
             var u = new User()
             {
-                Lastname = textBox1.Text,
-                Firstname = textBox2.Text
+                LastName = textBox1.Text,
+                FirstName = textBox2.Text
             };
             users.Add(u);
         }
